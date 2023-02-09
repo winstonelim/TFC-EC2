@@ -39,7 +39,7 @@ variable "db_cidr" {
 
 variable "region" {
   type        = string
-  description = "AWS region"
+  description = "AWS_region"
 }
 
 locals {
@@ -50,4 +50,5 @@ locals {
   dmz_cidr    = var.dmz_cidr
   ap_cidr     = var.ap_cidr
   db_cidr     = var.db_cidr
+  region  = var.region
 }
