@@ -37,6 +37,9 @@ variable "db_cidr" {
   default     = ["10.10.96.0/20", "10.10.112.0/20"]
 }
 
+variable "region_tfc" {
+  description = "region"
+}
 
 locals {
   company_name  = var.company_tag
@@ -46,4 +49,5 @@ locals {
   dmz_cidr    = var.dmz_cidr
   ap_cidr     = var.ap_cidr
   db_cidr     = var.db_cidr
+  region_tfc  = var.region_tfc
 }
